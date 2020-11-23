@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:rick_and_morty_app/app/binding/home_binding.dart';
 import 'package:rick_and_morty_app/app/routes/app_routes.dart';
+import 'package:rick_and_morty_app/app/ui/pages/details/details_view.dart';
 import 'package:rick_and_morty_app/app/ui/pages/home/home_view.dart';
 import 'package:rick_and_morty_app/app/ui/pages/splashscreen/splashscreen.dart';
 
@@ -14,6 +15,11 @@ class AppPages {
     GetPage(
       name: Routes.SPLASHSCREEN,
       page: () => SplashScreenPage(),
+    ),
+    GetPage(
+      name: Routes.DETAILS,
+      transition: Transition.cupertino,
+      page: () => DetailsPage(),
     ),
   ];
 }
